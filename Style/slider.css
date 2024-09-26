@@ -1,0 +1,172 @@
+
+
+.container{
+    max-width: 1260px;
+    margin: auto;
+}
+.container .popular{
+   
+    width: 100%;
+    padding-left: 2.5rem;
+    line-height: 24px;
+}
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    margin: 20px 0px;
+}
+.tab-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+.slider {
+    max-width: 1160px;
+    display: none;
+    overflow: hidden;
+    position: relative;
+}
+.slider.active {
+    display: block;
+}
+.slides {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+.slide {
+    min-width: calc(100% / 4);
+    box-sizing: border-box;
+    padding: 10px;
+}
+.slide img {
+    width: 100%;
+    border-radius: 5px;
+}
+.slide h2 {
+    padding: 1rem 0px 0.6rem;
+    font-size: 1.1rem;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+.arrow.prev {
+    left: 10px;
+    top: 120px;
+}
+.arrow.next {
+    right: -101px;
+    
+    top: 76px;
+}
+
+/*  Trending Cities Second Slider*/
+
+.slider-container {
+    position: relative;
+    width: 77%;
+    overflow: hidden;
+    margin: 0 auto 2.5rem;
+}
+.trending-cities{
+    padding-left: 1.1rem;
+    padding-bottom: 1rem;
+    line-height: 26px;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-item {
+    min-width: 25%;
+    /* box-sizing: border-box; */
+    padding: 10px;
+}
+
+.slider-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.slider-item h2 {
+    padding: 1rem 0px 0.6rem;
+    font-size: 1.1rem;
+}
+
+
+.arr {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.arr.prev {
+    left: 10px;
+    top: 200px;
+}
+
+.arr.next {
+    right: -101px;
+    top: 150px;
+
+}
+
+.arr:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Frequently Question*/
+
+.question-container{
+   
+    max-width: 1160px;
+    margin: auto;
+    height: auto;
+   
+}
+.question-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 44px;
+    justify-content: space-between;
+}
+.question-container h1{
+    color: #fff;
+}
+.question-content{
+    background: #c8c8c8;
+    padding: 1rem;
+    border-radius: 26px;
+    line-height: 20px;
+}
+.question-content h3{
+  
+    padding: 1rem 0px;
+   
+}

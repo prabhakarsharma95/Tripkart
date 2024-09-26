@@ -1,0 +1,639 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="Style/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+  
+   
+
+  <script>
+    $(function () {
+      $(".toggle").on("click", function () {
+        if ($(".item").hasClass("active")) {
+          $(".item").removeClass("active");
+        } else {
+          $(".item").addClass("active");
+        }
+      });
+    });
+
+    
+
+  </script>
+  <link rel="stylesheet" href="./Style/slider.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+
+<body>
+
+  <!--Navigation Bar-->
+  <nav>
+    <ul class="menu">
+      <li class="logo"><a href="#">TripKart.Com</a></li>
+      <li class="item"><a href="#home" class="nav-links">Home</a></li>
+      <li class="item"><a href="#about-us" class="nav-links">About</a></li>
+      <li class="item service-nav">
+        <a href="#service-section" class="nav-links">Services</a>
+      <ul class="service-sublist">
+        <li>Something</li>
+        <li>Something</li>
+        <li>Something</li>
+        <li>Something</li>
+        <li>Something</li>
+      </ul>
+      </li>
+
+      <li class="item button btn-login"><a href="#">Log In</a></li>
+      <li class="item button secondary"><a href="#">Sign Up</a></li>
+      <li class="toggle"><span class="bars"></span></li>
+    </ul>
+  </nav>
+
+  <!--Main-->
+
+  <main id="main">
+    <!--section-1 background-->
+
+    <div class="section-1" id="home">
+
+      <div class="overlay">
+      </div>
+      <div class="main-background">
+        <img src="Images/main.jpg" alt="">
+      </div>
+
+      <div class="company-name">
+        <h1> TripKart.Com</h1>
+      </div>
+    </div>
+    <h1 class="our-services">Our Services</h1>
+
+    <!--section-1 flexbox-->
+
+    <section class="services background" id="service-section">
+
+      <div class="row">
+
+        <div class=container>
+          <div class=card>
+            <div class=image>
+              <img href="#" src="Images/hotel.jpg" alt="">
+            </div>
+            <h1>Hotel Booking</h1>
+            <div class=content>
+              <h3>This is content</h3>
+              <p>DIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the
+                visual form of a document or a typeface without relying on meaningful content.</p>
+
+                <button class="book-btn">
+                  <span onclick="myFunction()" id="book"> Book now
+                  </span>
+                </button>
+            </div>
+            
+          </div>
+
+         
+
+        </div>
+        
+        <div class=container>
+          <div class=card>
+            <div class=image>
+              <img href="#" src="Images/flight.jpg" alt="">
+
+            </div>
+            <h1>Flight Booking</h1>
+            <div class=content>
+              <h3>This is content</h3>
+              <p>DIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the
+                visual form of a document or a typeface without relying on meaningful content.</p>
+
+                <button class="book-btn">
+                  <span> Book now
+                  </span>
+                </button>
+            </div>
+          </div>
+        </div>
+
+        <div class=container>
+          <div class=card>
+            <div class=image>
+              <img href="#" src="Images/train.jpg" alt="">
+
+            </div>
+            <h1>Train Booking</h1>
+            <div class=content>
+              <h3>This is content</h3>
+              <p>DIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the
+                visual form of a document or a typeface without relying on meaningful content.</p>
+
+                <button class="book-btn">
+                  <span> Book now
+                  </span>
+                </button>
+            </div>
+          </div>
+        </div>
+
+        <div class=container>
+          <div class=card>
+            <div class=image>
+              <img href="#" src="Images/cab.jpg" alt="">
+
+            </div>
+            <h1>Cab Booking</h1>
+            <div class=content>
+              <h3>This is content</h3>
+              <p>DIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the
+                visual form of a document or a typeface without relying on meaningful content.</p>
+
+                <button class="book-btn">
+                  <span> Book now
+                  </span>
+                </button>
+            </div>
+          </div>
+        </div>
+
+       
+      </div>
+      <!--section-2 flexbox-->
+    </section>
+
+    
+   <!-- Another slider-->
+    
+
+   <div class="container">
+    <div class="popular">
+      <h2>Popular flights near you</h2>
+      <p>Find deals on domestic and international flights</p>
+    </div>
+    <div class="tab-buttons">
+        <button onclick="showSlider('international')">International</button>
+        <button onclick="showSlider('domestic')">Domestic</button>
+    </div>
+
+    <!-- International Slider -->
+    <div id="internationalSlider" class="slider active">
+        <div class="slides">
+            <div class="slide">
+              <img src="./Images/ddimg1.jpg" alt="International 1">
+               <h2>New Delhi to Kathmandu</h2>
+               <p>Sep 9 - Sep 16 · Round-trip</p>
+            </div>
+            <div class="slide">
+              <img src="./Images/ddimg2.jpg" alt="International 2">
+               <h2>New Delhi to Phuket</h2>
+               <p>Sep 9 - Sep 16 · Round-trip</p>
+            </div>
+            <div class="slide">
+              <img src="./Images/ddimg3.jpg" alt="International 3">
+               <h2>New Delhi to Singapore</h2>
+               <p>Sep 9 - Sep 16 · Round-trip</p>
+            </div>
+            <div class="slide">
+              <img src="./Images/ddimg4.jpg" alt="International 4">
+               <h2>New Delhi to Bangkok</h2>
+               <p>Sep 9 - Sep 16 · Round-trip</p>
+            </div>
+            <div class="slide">
+              <img src="./Images/ddimg5.jpg" alt="International 5">
+               <h2>New Delhi to Malé</h2>
+               <p>Sep 9 - Sep 16 · Round-trip</p>
+            </div>
+            <div class="slide">
+              <img src="./Images/ddimg6.jpg " alt="International 6">
+               <h2>New Delhi to Dubai</h2>
+               <p>Sep 9 - Sep 16 · Round-trip</p>
+            </div>
+            <div class="slide">
+              <img src="./Images/ddimg7.jpg"  alt="International 7">
+               <h2>New Delhi to Kuta</h2>
+               <p>Sep 9 - Sep 16 · Round-trip</p>
+            </div>
+            <div class="slide">
+              <img src="./Images/ddimg8.jpg"  alt="International 8">
+               <h2>New Delhi to Kathmandu</h2>
+               <p>Sep 9 - Sep 16 · Round-trip</p>
+            </div>
+            <div class="slide">
+              <img src="./Images/ddimg9.jpg"  alt="International 9">
+               <h2>New Delhi to Istanbul</h2>
+               <p>Sep 9 - Sep 16 · Round-trip</p>
+            </div>
+            
+
+
+
+        </div>
+        <span class="arrow prev" onclick="moveSlides('international', -1)">&#10094;</span>
+        <span class="arrow next" onclick="moveSlides('international', 1)">&#10095;</span>
+    </div>
+
+    <!-- Domestic Slider -->
+    <div id="domesticSlider" class="slider">
+        <div class="slides">
+            <div class="slide">
+              <img src="./Images/dimg1.jpg" alt="Domestic 1">
+              <h2>New Delhi to Leh</h2>
+               <p>Sep 9 - Sep 16 · Round-trip</p>
+            </div>
+            <div class="slide">
+              <img src="./Images/dimg2.jpg" alt="Domestic 2">
+              <h2>New Delhi to Srinagar</h2>
+               <p>Sep 9 - Sep 16 · Round-trip</p>
+            </div>
+            <div class="slide">
+              <img src="./Images/dimg3.jpg" alt="Domestic 3">
+              <h2>New Delhi to Mumbai</h2>
+               <p>Sep 9 - Sep 16 · Round-trip</p>
+            </div>
+            <div class="slide">
+              <img src="./Images/dimg4.jpg" alt="Domestic 4">
+              <h2>New Delhi to Dabolim</h2>
+               <p>Sep 9 - Sep 16 · Round-trip</p>
+            </div>
+            <div class="slide">
+              <img src="./Images/dimg5.jpg" alt="Domestic 5">
+              <h2>New Delhi to Pune</h2>
+               <p>Sep 9 - Sep 16 · Round-trip</p>
+            </div>
+            <div class="slide">
+              <img src="./Images/dimg6.jpg" alt="Domestic 6">
+              <h2>New Delhi to Hyderabad</h2>
+               <p>Sep 9 - Sep 16 · Round-trip</p>
+            </div>
+            <div class="slide">
+              <img src="./Images/dimg7.jpg" alt="Domestic 5">
+              <h2>New Delhi to Kolkata</h2>
+               <p>Sep 9 - Sep 16 · Round-trip</p>
+            </div>
+            <div class="slide">
+              <img src="./Images/dimg8.jpg" alt="Domestic 6">
+              <h2>New Delhi to Bangalore</h2>
+               <p>Sep 9 - Sep 16 · Round-trip</p>
+            </div>
+        </div>
+        <span class="arrow prev" onclick="moveSlides('domestic', -1)">&#10094;</span>
+        <span class="arrow next" onclick="moveSlides('domestic', 1)">&#10095;</span>
+    </div>
+</div>
+
+   <!-- Another slider-->
+
+
+   <div class="slider-container">
+    <div class="trending-cities">
+      <h2>Trending cities</h2>
+      <p>Book flights to a destination popular with travelers from India</p>
+    </div>
+    
+    <div class="slider-wrapper">
+       
+          <div class="slider-item">
+            <img src="./Images/img1.jpg" alt="International 1">
+             <h2>New Delhi to Kathmandu</h2>
+             <p>Sep 9 - Sep 16 · Round-trip</p>
+          </div>
+          <div class="slider-item">
+            <img src="./Images/img2.jpg" alt="International 2">
+             <h2>New Delhi to Phuket</h2>
+             <p>Sep 9 - Sep 16 · Round-trip</p>
+          </div>
+          <div class="slider-item">
+            <img src="./Images/img3.jpg" alt="International 3">
+             <h2>New Delhi to Singapore</h2>
+             <p>Sep 9 - Sep 16 · Round-trip</p>
+          </div>
+          <div class="slider-item">
+            <img src="./Images/img4.jpg" alt="International 4">
+             <h2>New Delhi to Bangkok</h2>
+             <p>Sep 9 - Sep 16 · Round-trip</p>
+          </div>
+          <div class="slider-item">
+            <img src="./Images/img5.jpg" alt="International 5">
+             <h2>New Delhi to Malé</h2>
+             <p>Sep 9 - Sep 16 · Round-trip</p>
+          </div>
+          <div class="slider-item">
+            <img src="./Images/img6.jpg " alt="International 6">
+             <h2>New Delhi to Dubai</h2>
+             <p>Sep 9 - Sep 16 · Round-trip</p>
+          </div>
+          <div class="slider-item">
+            <img src="./Images/img7.jpg"  alt="International 7">
+             <h2>New Delhi to Kuta</h2>
+             <p>Sep 9 - Sep 16 · Round-trip</p>
+          </div>
+          <div class="slider-item">
+            <img src="./Images/img8.jpg"  alt="International 8">
+             <h2>New Delhi to Kathmandu</h2>
+             <p>Sep 9 - Sep 16 · Round-trip</p>
+          </div>
+          <div class="slider-item">
+            <img src="./Images/img9.jpg"  alt="International 9">
+             <h2>New Delhi to Istanbul</h2>
+             <p>Sep 9 - Sep 16 · Round-trip</p>
+          </div>
+          <div class="slider-item">
+            <img src="./Images/img10.jpg" alt="International 10">
+             <h2>New Delhi to Amsterdam</h2>
+             <p>Sep 9 - Sep 16 · Round-trip</p>
+          </div>
+
+    </div>
+    <button class="arr prev" onclick="slidePrev()">&#10094;</button>
+    <button class="arr next" onclick="slideNext()">&#10095;</button>
+  </div>
+        
+        
+  <!-- Frequently Asked question-->
+
+ <div class="question-container">
+  <h1>Frequently Asked Question</h1>
+
+  <div class="question-wrapper">
+    <div class="question-content">
+      <h3>How do I find the cheapest flights on Booking.com?</h3>
+      <p>You can sort flights by price to see them from cheapest to most expensive. To find the cheapest flights, you also need to consider factors like when you're booking and want to travel.</p>
+    </div>
+    <div class="question-content">
+      <h3>How do I find the cheapest flights on Booking.com?</h3>
+      <p>You can sort flights by price to see them from cheapest to most expensive. To find the cheapest flights, you also need to consider factors like when you're booking and want to travel.</p>
+    </div>
+    <div class="question-content">
+      <h3>How do I find the cheapest flights on Booking.com?</h3>
+      <p>You can sort flights by price to see them from cheapest to most expensive. To find the cheapest flights, you also need to consider factors like when you're booking and want to travel.</p>
+    </div>
+    <div class="question-content">
+      <h3>How do I find the cheapest flights on Booking.com?</h3>
+      <p>You can sort flights by price to see them from cheapest to most expensive. To find the cheapest flights, you also need to consider factors like when you're booking and want to travel.</p>
+    </div>
+    <div class="question-content">
+      <h3>How do I find the cheapest flights on Booking.com?</h3>
+      <p>You can sort flights by price to see them from cheapest to most expensive. To find the cheapest flights, you also need to consider factors like when you're booking and want to travel.</p>
+    </div>
+    <div class="question-content">
+      <h3>How do I find the cheapest flights on Booking.com?</h3>
+      <p>You can sort flights by price to see them from cheapest to most expensive. To find the cheapest flights, you also need to consider factors like when you're booking and want to travel.</p>
+    </div>
+   </div> 
+  </div>
+  
+        
+  </main>
+
+  <footer>
+  <div class="footer-container">
+
+   <div class="footer-item">
+    <h1>Support</h1>
+    <ul>
+      <li>Coronavirus (COVID-19) FAQs</li>
+      <li>Manage your trips</li>
+      <li>Customer Service help</li>
+      <li>Safety Resource Center</li>
+      
+    </ul>
+   </div>
+
+   <div class="footer-item">
+    <h1>Discover</h1>
+    <ul>
+      <li>Genius loyalty program</li>
+      <li>Seasonal and holiday deals</li>
+      <li>Travel articles</li>
+      <li>Booking.com for Business</li>
+      <li>Traveller Review Awards</li>
+      <li>Car rental</li>
+      <li>Flight finder</li>
+      <li>Restaurant reservations</li>
+      <li>Booking.com for Travel Agents</li>
+    </ul>
+   </div>
+
+  <div class="footer-item">
+    <h1>Terms and settings</h1>
+    <ul>
+      <li>Privacy & cookies</li>
+      <li>Terms & conditions</li>
+      <li>Modern Slavery Statement</li>
+      <li>Human Rights Statement</li>
+      
+    </ul>
+   </div>
+  
+
+   <div class="footer-item">
+    <h1>Partners</h1>
+    <ul>
+      <li>Extranet login</li>
+      <li>Partner help</li>
+      <li>List your property</li>
+      <li>Become an affiliate</li>
+     
+    </ul>
+   </div>
+
+   <div class="footer-item">
+    <h1>About</h1>
+    <ul>
+      <li>About Booking.com</li>
+      <li>How We Work</li>
+      <li>Sustainability</li>
+      <li>Press center</li>
+      <li>Careers</li>
+      <li>Investor relations</li>
+      <li>Corporate contact</li>
+     
+    </ul>
+   </div>
+
+  </div>
+
+  <p class="copyright">Booking.Com<br>
+    Copyright © 2023 Booking, Inc.</p>
+  </footer>
+
+   <!-- hotel booking popup-->
+
+   <div id="myDIV">
+		
+		
+    <i class="fa-solid fa-xmark" onclick="myFunction1()"></i>
+    <div class="book-now">
+      <div class="wrapper">
+        <div class="content1">
+        <img src="./Images/bg1.png" alt="">
+        </div>
+        <div class="content-h">
+          <h1>Book a fight</h1>
+          <p>Unlock the skies,book your flight<br>with ease</p>
+        </div>
+      </div>
+      <div class="trip-type">
+        <h4>Trip Type</h4><br>
+        <div class="input">
+          <input type="radio" name="test">Round trip
+          <input type="radio" name="test">One Way trip
+          <input type="radio" name="test">Multi Cities trip
+        </div>
+        
+
+      </div>
+      <div class="from-to-wrapper">
+        <div class="from">
+          <p>From</p>
+          <input list="browsers" name="myBrowser" /></label>
+          <datalist id="browsers">
+          <option value="Airport1">
+          <option value="Airport2">
+          <option value="Airport3">
+          <option value="Airport4">
+          <option value="Airport5">
+          <option value="Airport6">
+          </datalist>
+        </div>
+        <div class="to">
+          <p>To</p>
+          <input list="browsers" name="myBrowser" /></label>
+          <datalist id="browsers">
+          <option value="Airport1">
+          <option value="Airport2">
+          <option value="Airport3">
+          <option value="Airport4">
+          <option value="Airport5">
+          <option value="Airport6">
+          </datalist>
+        </div>
+      </div>
+
+      <div class="from-to-wrapper">
+        <div class="from">
+          <p>Airline</p>
+          <input list="browsers" name="myBrowser" /></label>
+          <datalist id="browsers">
+          <option value="Airport1">
+          <option value="Airport2">
+          <option value="Airport3">
+          <option value="Airport4">
+          <option value="Airport5">
+          <option value="Airport6">
+          </datalist>
+        </div>
+        <div class="to">
+          <p>Departure</p>
+          <input type="date" id="birthday" name="birthday">
+          
+        </div>
+      </div>
+
+      <div class="from-to-wrapper">
+        <div class="to">
+          <p>Return</p>
+          <input type="date" id="birthday" name="birthday">
+          
+        </div>
+        <div class="to">
+          <p>Adults(16+)</p>
+          <input type="text" id="birthday" name="birthday" placeholder="ex:2">
+          
+        </div>
+      </div>
+
+
+
+      <div class="from-to-wrapper">
+        <div class="from">
+          <p>From</p>
+          <input list="browsers" name="myBrowser" /></label>
+          <datalist id="browsers">
+          <option value="Airport1">
+          <option value="Airport2">
+          <option value="Airport3">
+          <option value="Airport4">
+          <option value="Airport5">
+          <option value="Airport6">
+          </datalist>
+        </div>
+        <div class="to">
+          <p>To</p>
+          <input list="browsers" name="myBrowser" /></label>
+          <datalist id="browsers">
+          <option value="Airport1">
+          <option value="Airport2">
+          <option value="Airport3">
+          <option value="Airport4">
+          <option value="Airport5">
+          <option value="Airport6">
+          </datalist>
+        </div>
+      </div>
+
+      <div class="from-to-wrapper">
+        <div class="from">
+          <p>Airline</p>
+          <input list="browsers" name="myBrowser" /></label>
+          <datalist id="browsers">
+          <option value="Airport1">
+          <option value="Airport2">
+          <option value="Airport3">
+          <option value="Airport4">
+          <option value="Airport5">
+          <option value="Airport6">
+          </datalist>
+        </div>
+        <div class="to">
+          <p>Departure</p>
+          <input type="date" id="birthday" name="birthday">
+          
+        </div>
+      </div>
+
+      <div class="from-to-wrapper">
+        <div class="to">
+          <p>Return</p>
+          <input type="date" id="birthday" name="birthday">
+          
+        </div>
+        <div class="to">
+          <p>Adults(16+)</p>
+          <input type="text" id="birthday" name="birthday" placeholder="ex:2">
+          
+        </div>
+      </div>
+
+      <button class="next">Next</button>
+      
+    </div>
+  </div>
+
+
+  <!-- hotel booking popup-->
+
+  <!--Give Feedback Button sticky-->
+  <button id="feedback" > Give Feedback</button>
+  <form action="" class="feedback-form" >
+    <Label>Feedback Form</Label>
+    <textarea name="" id="" rows="50" cols="70" placeholder="Enter Your Feedback"></textarea>
+    
+  </form>
+
+ 
+<script src="./js/script.js"></script>
+<script src="./js/slider.js"></script>
+
+</body>
+
+</html>
